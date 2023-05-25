@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
+
+
+// Hi da punda...!!!!!!!!!!!!!!!!!!!!!!!! 
 {
     public WheelCollliders collliders;               //Colliders
 
 
 
-
-    public MeshRenderer FlMesh;                      
-    public MeshRenderer FrMesh;                        //Meshes
-    public MeshRenderer RlMesh;
-    public MeshRenderer RrMesh;
+     public wheelmesh  Meshes;                        //Meshes
+    
 
 
     public float gasInput;
@@ -114,13 +114,26 @@ public class CarController : MonoBehaviour
     }
 
 
+// creating a class for wheelColliders!!
     [System.Serializable]
     public class WheelCollliders
     {
+    
         public WheelCollider FlWheel;
-        public WheelCollider FrWheel;
+        public WheelCollider FrWheel;             
         public WheelCollider RlWheel;
         public WheelCollider RrWheel;
+    }
+
+    //Creating a class for Wheelmesh!!
+    [Syastem.Serializable]
+    public class wheelmesh
+    {
+    public MeshRenderer FlMesh;                      
+    public MeshRenderer FrMesh;                        //Meshes
+    public MeshRenderer RlMesh;
+    public MeshRenderer RrMesh;
+
     }
 
 
